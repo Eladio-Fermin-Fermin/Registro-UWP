@@ -12,8 +12,8 @@
         <StackPanel Margin="240,50,240,0">
             <TextBlock Text="Login" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="36"
               FontWeight="Bold"/>
-            <Image HorizontalAlignment="Stretch" Height="100" Margin="0,0,0,0" VerticalAlignment="Stretch"
-              Source="/Assets/SmallTile.png"/>
+            <Image HorizontalAlignment="Stretch" Height="200" Margin="0,0,0,0" VerticalAlignment="Stretch"
+              Source="/Assets/StoreLogo.scale-400.png"/>
             <StackPanel Margin="0,0,0,0">
                 <TextBox Name="Email" Text="{Binding Email, 
                     Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" InputScope="EmailSmtpAddress"
@@ -28,6 +28,13 @@
                 <TextBlock Foreground="#FFC43131" Text="{Binding Password, Mode=TwoWay}" 
                  TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
             </StackPanel>
+            <Button Content="Iniciar" Command="{Binding IniciarCommand}" HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"/>
+            <TextBlock Text="{Binding Message, Mode=TwoWay}" TextWrapping="Wrap" 
+             HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Stretch"/>
+            <TextBlock Text="PDHN" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0,50,0,0"
+             VerticalAlignment="Stretch"/>
+
         </StackPanel>
         
 
