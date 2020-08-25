@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Registro_UWP.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,7 +25,9 @@ namespace Registro_UWP.Views
     {
         public Login()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+            Object[] campos = { Email, Password };
+            DataContext = new LoginViewModel(campos);
         }
     }
 }
